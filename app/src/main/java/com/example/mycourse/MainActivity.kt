@@ -10,6 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mycourse.databinding.ActivityMainBinding
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -24,7 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             //Handling UI
-//            viewPager.adapter = TabAdapter(supportFragmentManager)
+//            viewPager2.adapter = TabAdapter(supportFragmentManager)
+//            tabLayout.setupWithViewPager(viewPager2)
         }
     }
 
@@ -33,24 +38,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-//    override fun onOptionsItemSelecte(item: MenuItem): Boolean {
-//        return when (item.itemId) {
-//            R.id.action_home -> {
-//                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            R.id.action_materi -> {
-//                // Logika untuk melihat skor
-//                Toast.makeText(this, "Materi", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            R.id.action_quiz -> {
-//                Toast.makeText(this, "Quiz", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            else -> super.onOptionsItemSelected(item)
-//        }
-//    }
 
     //function untuk menghandle jika menu dipilih oleh user
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
